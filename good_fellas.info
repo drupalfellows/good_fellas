@@ -1,0 +1,4 @@
+name = Drupal Fellowship Good Fellas
+description = Drupal Fellowship Good Fellas install profiles
+version = VERSION
+core = 7.x

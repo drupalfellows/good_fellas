@@ -1,4 +1,4 @@
-good_fellas
-===========
+drupalacademy
+=============
 
-Good Fellas Fellowship Team
+Drupal Academy
