@@ -11,7 +11,7 @@
  *
  * @see system_install()
  */
-function good_fellas_nation_install() {
+function good_fellas_install() {
   
   //Try to install custom_config().
   module_enable(array('custom_config'));
