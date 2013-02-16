@@ -59,6 +59,7 @@ function good_fellas_install() {
     'custom_config',
 
     // Features modules.
+    'gf_shift'
     )
   );
 }

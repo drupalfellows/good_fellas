@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Shift feature.
+ */
+
+include_once 'gf_shift.features.inc';
