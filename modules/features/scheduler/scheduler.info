@@ -1,0 +1,11 @@
+name = Scheduler
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = scheduler
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = user-user-field_first_name
+features[field][] = user-user-field_last_name
