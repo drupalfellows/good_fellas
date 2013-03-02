@@ -64,6 +64,18 @@ projects[variable][version] = 2.1
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.2
 
+projects[availability_calendars] = contrib
+projects[availability_calendars] = 4.0
+
+projects[fullcalendar] = contrib
+projects[fullcalendar] = 2.0
+
+projects[views] = contrib
+projects[views] = 3.5
+
+projects[ds] = contrib
+projects[ds] = 2.2
+
 ; THEMES
 
 ; LIBRARIES
