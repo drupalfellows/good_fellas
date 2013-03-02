@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the schedule_view feature.
+ */
+
+include_once 'schedule_view.features.inc';
