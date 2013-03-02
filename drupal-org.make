@@ -42,8 +42,6 @@ projects[globalredirect][version] = 1.5
 
 projects[i18n][subdir] = contrib
 projects[i18n][version] = 1.7
-; Patch helps with installin from drush.
-projects[i18n][patch][] = "http://drupal.org/files/static_reset.patch"
 
 projects[link][subdir] = contrib
 projects[link][version] = 1.0
