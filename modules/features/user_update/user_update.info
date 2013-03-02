@@ -1,0 +1,16 @@
+name = user_update
+description = extend user entity with additional fields
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = user_update
+dependencies[] = availability_calendar
+dependencies[] = availability_calendar_booking_formlet
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = user-user-field_availability
+features[field][] = user-user-field_book_availability
+features[field][] = user-user-field_first_name
+features[field][] = user-user-field_last_name
