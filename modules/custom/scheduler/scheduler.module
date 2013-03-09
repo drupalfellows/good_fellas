@@ -1,0 +1,29 @@
+<?php
+
+function scheduler_form_alter(&$form, &$from_state, $form_id) {
+	//dpm($form);
+	if ($form_id=='availability_calendar_booking_formlet_form') {
+		$form['#submit'][] = 'scheduler_save_date_submit';
+		$form['actions']['#type'] = 'submit';
+	  $form['actions']['#value'] = t("Schedule");
+		unset($form['#action']);
+		//dpm($form);
+	}
+}
+
+function scheduler_save_date_submit($form, &$form_state) {
+	//dpm($form_state);
+	$account = user_load($form_state['values']['entity_id']);
+	//dpm($account);
+	//dpm($account->field_availability['und']['0']['cid']);
+	$from = new DateTime($form_state['input']['from_iso']);
+	$to = new DateTime($form_state['input']['to_iso']);
+	$sid = 3; //available
+
+	//check to see if cid is assigned, if not create one
+	if (!$cid = $account->field_availability['und']['0']['cid']) {
+		//$cid = availability_calendar_create_calendar();
+		//dpm($cid);
+	}
+	availability_calendar_update_availability($cid, $sid, $from, $to);
+}
